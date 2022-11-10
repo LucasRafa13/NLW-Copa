@@ -9,7 +9,6 @@ interface UserProps {
   name: string
   avatarUrl: string
 }
-
 interface AuthProviderProps {
   children: React.ReactNode
 }
