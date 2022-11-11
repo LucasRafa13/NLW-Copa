@@ -1,15 +1,10 @@
-import { z } from "zod"
 import { FastifyInstance } from "fastify"
-
 import { prisma } from "../lib/prisma"
 
-import ShortUniqueId from "short-unique-id"
-
 export async function userRoutes(fastify: FastifyInstance) {
-  fastify.get("/users/count", async () => {
+  fastify.get('/users/count', async () => {
     const count = await prisma.user.count()
 
     return { count }
   })
 }
-

@@ -1,4 +1,4 @@
-import { Input as NativeBaseInput, IInputProps } from "native-base"
+import { Input as NativeBaseInput, IInputProps } from 'native-base';
 
 export function Input({ ...rest }: IInputProps) {
   return (
@@ -17,5 +17,5 @@ export function Input({ ...rest }: IInputProps) {
       }}
       {...rest}
     />
-  )
+  );
 }
